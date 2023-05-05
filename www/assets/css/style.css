@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+/* Jumbotron background img assets/img/jumbotron-img */
+.jumbotron {
+  background-image: url("../img/nav-img.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  padding: 3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* Nav */
+nav {
+  background-color: #2B3467;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  background-color: rgba(0, 190, 233, 0.284);
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Aside */
+aside {
+  flex: 1;
+}
+
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-layout-item {
+  flex: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.card-layout-item img {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+/* card profile */
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* card profile img */
+.card-profile img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* content */
+.content {
+  padding: 1rem;
+}
+
+.content img {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #2B3467;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  nav ul {
+    padding-inline: 1rem;
+  }
+  nav li {
+    display: inline;
+  }
+  nav a {
+    display: inline;
+  }
+  .card-layout-item {
+    flex: 1;
+  }
+}
