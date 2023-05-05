@@ -23,7 +23,7 @@ header {
 
 /* Jumbotron background img assets/img/jumbotron-img */
 .jumbotron {
-  background-image: url("../img/nav-img.jpg");
+  background-image: url("https://storage.googleapis.com/my-storage-300402/nav-img.jpg");
   background-size: cover;
   background-position: center;
   color: #000000;
